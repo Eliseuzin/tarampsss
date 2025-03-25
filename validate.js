@@ -90,6 +90,18 @@ city.addEventListener('keyup',()=>{
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if(validUserNAME && validcnpj && validcity && validphone){
+    var listaformu=JSON.parse(localStorage.getItem("listaformu")||"[]");
+
+    listaformu.push(
+    {
+      nomeform:UserName.value,
+      cnpjform:cnpj.value,
+      celuform:phone.value,
+      cidaformu:city.value
+    }
+    )
+    localStorage.setItem("listaformu",JSON.stringify(listaformu))
+
     //message successfully
     success.setAttribute('style','display:block');
     success.innerHTML="Cadastrando usuário...";
