@@ -108,6 +108,9 @@ form.addEventListener("submit", (e) => {
     error.setAttribute('style','display:none');
     error.innerHTML="";
     // alert("Deu bom!")
+    setTimeout(() => {
+      window.location.href="https://www.google.com/search?q=google+tradutor&rlz=1C1MRUS_pt-PTBR1093BR1093&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQszMDk0MDQ1ajBqN6gCCLACAfEFxe3jsOc5UUM&sourceid=chrome&ie=UTF-8"
+    }, 4000);
   }else{
     // alert("Preenchar os campos corretamente, por favor!")
     //message unsuccessful
