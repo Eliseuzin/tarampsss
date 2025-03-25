@@ -118,6 +118,20 @@ button:hover {
 #fa-sharp fa-solid fa-circle-check {
   color: green;
 } */
+ .loading{
+  width: 23px;
+  animation: carregar 1s infinite linear;
+ }
+ @keyframes carregar{
+  form{
+    transform: rotate(0deg);
+
+  }
+  to{
+    transform: rotate(360deg);
+
+  }
+ }
 
 .form-control.error input {
   border-color: red;
